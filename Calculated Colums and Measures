@@ -1,0 +1,72 @@
+Calculated Columns
+
+These will help create better slicers and visuals:
+
+1️⃣ BMI Category
+
+BMI Category = 
+SWITCH(
+    TRUE(),
+    'Table'[BMI] < 18.5, "Underweight",
+    'Table'[BMI] >= 18.5 && 'Table'[BMI] < 25, "Normal",
+    'Table'[BMI] >= 25 && 'Table'[BMI] < 30, "Overweight",
+    'Table'[BMI] >= 30, "Obese"
+)
+
+
+Lets you slice data by WHO BMI classification.
+
+2️⃣ Cholesterol Category
+
+Cholesterol Category = 
+SWITCH(
+    TRUE(),
+    'Table'[cholestrol] < 5.2, "Desirable",
+    'Table'[cholestrol] >= 5.2 && 'Table'[cholestrol] < 6.2, "Borderline High",
+    'Table'[cholestrol] >= 6.2, "High"
+)
+
+
+Gives a quick medical classification for cholesterol.
+
+3️⃣ High Risk Flag
+
+High Risk = 
+IF(
+    'Table'[Glycated_Hemoglobin] > 6.5 || 
+    'Table'[BMI] >= 30 || 
+    'Table'[cholestrol] >= 6.2,
+    "High Risk",
+    "Low/Moderate Risk"
+)
+
+
+Helps filter patients who have multiple high-risk indicators.
+
+Measures
+
+These will be handy for KPI cards and comparative visuals:
+
+1️⃣ Average BMI
+
+Average BMI = AVERAGE('Table'[BMI])
+
+
+2️⃣ Average Glucose (Glycated Hemoglobin)
+
+Avg HbA1c = AVERAGE('Table'[Glycated_Hemoglobin])
+
+
+3️⃣ % Diabetic
+
+% Diabetic = 
+DIVIDE(
+    CALCULATE(COUNTROWS('Table'), 'Table'[Result] = "Diabetic"),
+    COUNTROWS('Table'),
+    0
+)
+
+
+4️⃣ Average Cholesterol by Outcome
+
+Avg Cholesterol = AVERAGE('Table'[cholestrol])
