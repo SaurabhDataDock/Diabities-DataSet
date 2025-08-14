@@ -1,0 +1,74 @@
+Feature
+
+Gender
+
+AGE
+
+Urea
+
+Cr (Creatinine)
+
+HbALe Glycated
+Hemoglobin)
+
+Chol (Cholesterol)
+‘TG (Triglycerides)
+HDL (High-Density
+
+Lipoprotein)
+
+LDL (Low-Density
+Lipoprotein)
+
+VLDL (Very Low-
+Density Lipoprotein)
+
+BMI (Body Mass Index)
+
+Chass
+
+Description
+
+The biological sex of the individual. Usually encoded as: 0 = F
+‘impact diabetes risk due to hormonal and lifestyle differences.
+
+we, 1 = Male. Gender ean
+
+‘The age of the subject in years. Age is a critical risk factor as diabetes risk increases with age,
+especially after 45.
+
+‘A measurement of urea (in mg/dL) in the blood. High levels may indicate kidney issues, which
+20 mg/dL.
+
+are common complications of diabetes. Normal range: ~
+
+“Measures the level of creatinine in the blood (mg/dL), Also a marker of kidney fimetion, Elevated
+Cr levels may suggest impaired kidney function, often linked with diabetes. Normal range: ~0.6-
+1.3 mgidL.
+
+‘A key indicator of average blood glucose levels over the past 2-3 months. Expressed as a
+percentage. - Normal: <5.7% - Prediabetic: $.7-6.4% - Diabetic: 26.5%
+
+Total cholesterol in the blood (mg/dL). High cholesterol isa risk factor for cardiovascular
+disease, often seen in diabetic individuals. Normal: <200 mg/dL.
+
+“Measures the amount of fat in the blood (mg/dL). High levels are associated with insulin
+resistance and metabolic syndrome, Normal: <150 mg/dL.
+
+The "good" cholesterol (mg/dL). Higher levels are better. Helps remove excess cholesterol from
+‘the bloodstream. - Ideal: >40 mg/dL (men), >$0 mg/dL. (women).
+
+The "bad" cholesterol (mL). High levels contibute to plague buildup in arteries, - Optimal
+<100 mgd.
+
+“Another type of "bad" cholesterol (mg/dL). carries triglycerides. Offen estimated fom TGS
+‘High VLDL is associated with increased diabetes risk. Normal: 2-30 mg/dL.
+
+‘A measure of body fat based on height and weight (kg/m). Obesity (BMI 230) is a major risk
+{actor for Type 2 diabetes. - Underweight: <18.5 - Normal: 18.5-24.9 - Overweight: 25-29.9 -
+Obese: 230
+
+Target label: Indicates diabetes status. Typically coded as: 0=Non-Diabetic, 1 =
+‘Prediet-Diabetic. This isthe outeome you're trying to predict or lassi
+
+jiabetic, 2=
